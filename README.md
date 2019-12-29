@@ -38,46 +38,70 @@ git merge
 
 ***************************************************************************************************************
 
+# Học được từ Coder-tokyo
+
+```sh
 git log : xem lich su commit
+```
 
+```sh
 git show <commit-id> : xem chi tiet lich su cua mot commit
+```
 
+```sh
 git diff : check sự khác nhau của file modifed
+```
 
-định nghĩa staging area : la ~ file modefied màu xanh
-định nghĩa git repository: la ~ fỉle màu xanh sau khi commit
+### định nghĩa staging area : la ~ file modefied màu xanh
+### định nghĩa git repository: la ~ fỉle màu xanh sau khi commit
 
+```sh
 git restore / git checkout <ten file> : restore file khi con dang ở working directory
 git reset HEAD <ten-file> : bo file ra khỏi staging area // có thể không cần HEAD
+```
 
+```sh
 git checkout -b <ten-branch> : tạo nhánh mới và nhảy vào nhánh đó làm việc
 git checkout <ten-branch> : checkout branch đó
+```
 
+```sh
 git branch : kiem tra xem co bao nhieu branch va dang o branch nao
+```
 
-muốn merge B vào A
-git checkout A
-git merge B
+### muốn merge B vào A
+### git checkout A
+### git merge B
 
+```sh
 git branch -D <ten-branch> : delete branch
+```
 
+```sh
 git reset --soft <commit-id> : uncommit sau commit-id được chỉ định, file sau commit-id ở staging area
 git reset --mixed <commit-id> : uncommit sau commit-id được chỉ định, file sau commit-id ở work directory
 git reset --hard <commit-id> : xoa luon commit va nhung thay đổi của nó (danger)
+```
 
+```sh
 git revert <commit-id> : xoa di tất cả những thay đổi trong commit đó (những là xóa đi tất những dòng có dấu +)
+```
 
+```sh
 git clone <url> : tai sourse ve may lan dau
 git pull : dong bo source khi da co source
+```
 
 ## pull request
+```sh
 git checkout -b <ten-branch> : tao 1 brach moi, ve lam viec tren branch do
 git push origin <ten-brach> : push len 1 branch moi
 pull request tren github
 git fetch origin <ten-branch>
-
+```
 
 ## resolve conflict
+```sh
 c1
 ở branch conflict
 git rebase master
@@ -85,6 +109,7 @@ git add .
 git rebases -continue
 git push origin <ten-branch> -f
 
-c1
+c2
 git merge
 ...
+```
