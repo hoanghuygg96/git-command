@@ -2,41 +2,42 @@
 git command basic
 
 *****************************************************************************************************************
-//Lần đầu tiên config cho nó
+## Lần đầu tiên config cho nó
 git config --global user.name "name"
 git config -- global user.emai "abc@gmail.com"
 
-//sử dụng duy nhất lần đầu tiên khi clone source từ server về máy tính
+## sử dụng duy nhất lần đầu tiên khi clone source từ server về máy tính
 git clone <đường dẫn thư mục git trên github>
 
-//Kiểm tra trạng thái xem có sự thay đổi gì hay không
+## Kiểm tra trạng thái xem có sự thay đổi gì hay không
 git status
 
-//add tất cả các file mà có sự thay đổi có màu đỏ
+## add tất cả các file mà có sự thay đổi có màu đỏ
 git add .
-//Sau khi add xong những file thay đổi có màu xanh.
-//Code chuyển qua vùng Staging Area
+- Sau khi add xong những file thay đổi có màu xanh.
+- Code chuyển qua vùng Staging Area
 
-//commit code
+## commit code
 git commit -m "Upload source code"
-//Sau khi commit code chuyển qua phân vùng Local Repository
+- Sau khi commit code chuyển qua phân vùng Local Repository
 
-//Đẩy code tại máy tính của mình lên server
+## Đẩy code tại máy tính của mình lên server
 git push origin master <nhánh> => nhập user & password
 
-//Tạo Branch
+## Tạo Branch
 git branch <ten branch>
 
-//Kiểm tra branch
+## Kiểm tra branch
 git branch
 
-//kéo code mới nhất về
+## kéo code mới nhất về
 git pull
 
-//merge code lai voi nhau
+## merge code lai voi nhau
 git merge
 
 ***************************************************************************************************************
+
 git log : xem lich su commit
 
 git show <commit-id> : xem chi tiet lich su cua mot commit
@@ -69,15 +70,14 @@ git revert <commit-id> : xoa di tất cả những thay đổi trong commit đó
 git clone <url> : tai sourse ve may lan dau
 git pull : dong bo source khi da co source
 
-
-// pull request
+## pull request
 git checkout -b <ten-branch> : tao 1 brach moi, ve lam viec tren branch do
 git push origin <ten-brach> : push len 1 branch moi
 pull request tren github
 git fetch origin <ten-branch>
 
 
-// resolve conflict
+## resolve conflict
 c1
 ở branch conflict
 git rebase master
