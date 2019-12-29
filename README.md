@@ -3,8 +3,8 @@ git command basic
 
 *****************************************************************************************************************
 //Lần đầu tiên config cho nó
-git config --global user.name "nguyen"
-git config -- global user.emai "dpnguyen53@gmail.com"
+git config --global user.name "name"
+git config -- global user.emai "abc@gmail.com"
 
 //sử dụng duy nhất lần đầu tiên khi clone source từ server về máy tính
 git clone <đường dẫn thư mục git trên github>
